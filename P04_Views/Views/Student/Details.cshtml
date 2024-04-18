@@ -5,5 +5,9 @@
 </div>
 
 @{
-    @ViewData["StudentInfo"];
+// ??
+
+    var student = ViewData["StudentInfo"] as P04_Views.Models.Student;
+
+    @ViewData["StudentInfo"].ToString();
 }
