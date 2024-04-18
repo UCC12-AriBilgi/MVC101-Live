@@ -1,0 +1,31 @@
+﻿@model List<Cars>
+
+@{
+    ViewData["Title"] = "Cars Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">ARABA LİSTEMİZ</h1>
+    <hr />
+    <br />
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Brand Name</th>
+            <th>Family</th>
+            <th>Year</th>
+        </tr>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.CarID</td>
+                <td>@item.BrandName</td>
+                <td>@item.Family</td>
+                <td>@item.Year</td>
+            </tr>
+        }
+
+    </table>
+
+
+</div>

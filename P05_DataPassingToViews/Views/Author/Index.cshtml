@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Yazarlar Sayfası";
+}
+
+<div class="text-center">
+    <h1 class="display-4">YAZARLARIMIZ</h1>
+    <br />
+    <hr />
+</div>
+
+
+<h1>@ViewBag.Message</h1>
+<br />
+<br />
+@foreach(var item in ViewData["Author"] as List<Authors>)
+{
+    <p>
+        <b>@item.AuthorId</b> numaralı yazar : <b>@item.AuthorName</b> - Kitap Adı : <i>@item.BookName</i>
+    </p>
+    <br />
+}
