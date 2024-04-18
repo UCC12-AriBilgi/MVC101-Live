@@ -15,12 +15,17 @@ namespace P01_MVCBasics.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(); // İlgili view ımı göster
         }
 
         public IActionResult Privacy()
         {
-            return View();
+            return View(); // ilgili view Home/Privacy.html
+        }
+
+        public IActionResult Contact()
+        {
+            return View(); // Home/Contact
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
