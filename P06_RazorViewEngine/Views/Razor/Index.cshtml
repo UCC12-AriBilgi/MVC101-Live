@@ -35,3 +35,77 @@
 <p>
     @result
 </p>
+<br />
+<hr />
+@* While Loop *@
+
+@{
+    var index = 0;
+
+    while (index <= 20)
+    {
+        <span>Şu an @index inci indexdeyim..</span><br />
+        index++;
+    }
+}
+<br />
+<hr />
+@* Arrays *@
+@{
+    string[] uyeler = { "Ümit", "Başak", "Yağmur", "Erdem", "Sinem" };
+
+    int i = Array.IndexOf(uyeler, "Ümit"); // Belirlenen üyenin index bilgisi
+
+    int boyut = uyeler.Length; // Dizimin boyutu/uzunluğu
+
+    string uye = uyeler[2]; // Dizimdemki 2. index deki eleman
+}
+<h3>Arrays</h3>
+@foreach (var kisi in uyeler)
+{
+    <p><b>Üye Adı : </b>@kisi</p>
+}
+<br />
+<p>Üye listesinin eleman sayısı : @boyut</p>
+<p>2. indexdeki eleman : @uye</p>
+<p>Ümit isimli eleman @i nci indexde</p>
+<br />
+<hr />
+@* Switch Case yapısı *@
+<h3>Switch - Case</h3>
+@{
+    var weekday = DateTime.Now.DayOfWeek;
+    var day = weekday.ToString();
+    var message = "";
+}
+@{
+    switch (day)
+    {
+        case "Monday":
+            message = "Bugün günlerden sendrom günü...";
+            break;
+        case "Tuesday":
+            message = "Bugün sallanıyor...";
+            break;
+        case "Wednesday":
+            message = "Bugün seller var...";
+            break;
+        case "Thursday":
+            message = "Bugün perişan....";
+            break;
+        case "Friday":
+            message = "Ohh be günü...";
+            break;
+        case "Saturday":
+            message = "Bugün mahalle pazarı günü...";
+            break;
+        case "Sunday":
+            message = "Bugün relax günü...";
+            break;
+        default:
+            message = "Bilemedim..";
+            break;
+    }
+
+}
+<p>@message</p>
