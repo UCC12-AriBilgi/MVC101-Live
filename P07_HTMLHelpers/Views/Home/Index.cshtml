@@ -1,0 +1,46 @@
+﻿
+
+@model Student
+
+@* Razor view lar içinde HTML taglarını sayfa uzerine yerlestirmek için kullanılan metotlar/yapılar*@
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<p>
+    @Html.ActionLink("Create New","Create"); @* Noktadan sonraki kısım Extension Method olarak adlandırılıyor *@
+</p>
+
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.IlkAd)</th>
+        <th>@Html.DisplayNameFor(model => model.LastName)</th>
+        <th>@Html.DisplayNameFor(model => model.ClassName)</th>
+    </tr>
+
+
+</table>
+
+Öğrenci adı : @Html.TextBox("IlkAd")
+<br />
+<br />
+
+Aktif mi : @Html.CheckBox("IsActive")
+<br />
+<br />
+Cinsiyet<br />
+Erkek: @Html.RadioButton("Gender","Erkek")
+Kadın: @Html.RadioButton("Gender","Kadın")
+<br />
+<br />
+
+Cinsiyet Seçiniz : @Html.DropDownListFor(m => m.StuGender,new SelectList(Enum.GetValues(typeof(Gender))))
+
+
