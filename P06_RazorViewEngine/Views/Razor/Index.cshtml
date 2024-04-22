@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Razor Page";
+}
+
+<div class="text-center">
+    <h2>RAZOR VIEW ENGINE</h2>
+
+</div>
+
+@{
+    var Message = "Hello MVC Razor";
+}
+<br />
+<br />
+@* Inline kullanım şekli *@
+<p>Mesajım şudur : <b>@Message</b></p>
+<br />
+<hr />
+
+<ul class="navbar-nav flex-grow-1">
+    @for (int sayac = 1; sayac <= 10; sayac++)
+    {
+        <li class="nav-item text-dark">@sayac</li>
+    }
+</ul>
+<br />
+<hr />
+@{
+    var greetingMessage = "Sitemize hoşgeldiniz...beş gittiniz....";
+    var weekDay = DateTime.Now.DayOfWeek;
+    var result = greetingMessage + "Burası Kadıköy...Günlerden : " + weekDay;
+
+}
+
+<p>
+    @result
+</p>
