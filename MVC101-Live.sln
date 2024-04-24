@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04_Views", "P04_Views\P04_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05_DataPassingToViews", "P05_DataPassingToViews\P05_DataPassingToViews.csproj", "{67BB6FBA-AFA6-487C-A038-D0959DC04B20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06_RazorViewEngine", "P06_RazorViewEngine\P06_RazorViewEngine.csproj", "{E68D773B-3ABC-4893-8F91-CE0A86CEE943}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06_RazorViewEngine", "P06_RazorViewEngine\P06_RazorViewEngine.csproj", "{E68D773B-3ABC-4893-8F91-CE0A86CEE943}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07_HTMLHelpers", "P07_HTMLHelpers\P07_HTMLHelpers.csproj", "{30D9C6F4-62DA-4AA8-808B-F6C1CBEFC339}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07_HTMLHelpers", "P07_HTMLHelpers\P07_HTMLHelpers.csproj", "{30D9C6F4-62DA-4AA8-808B-F6C1CBEFC339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08_MVCSample", "P08_MVCSample\P08_MVCSample.csproj", "{0A4EB395-1E59-486E-91E6-1547644DC300}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{30D9C6F4-62DA-4AA8-808B-F6C1CBEFC339}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30D9C6F4-62DA-4AA8-808B-F6C1CBEFC339}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30D9C6F4-62DA-4AA8-808B-F6C1CBEFC339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A4EB395-1E59-486E-91E6-1547644DC300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A4EB395-1E59-486E-91E6-1547644DC300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A4EB395-1E59-486E-91E6-1547644DC300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A4EB395-1E59-486E-91E6-1547644DC300}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
