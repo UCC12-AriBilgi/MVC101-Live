@@ -62,10 +62,29 @@ namespace P08_MVCSample.Controllers
 
             return RedirectToAction("Listele");
 
+        }
 
+        // GET
+        public IActionResult Delete(int id)
+        {
+            // Burası View tarafından gönderilen id ye göre ilgili kaydı silme yapılabilecek şekilde view tarafında gösterecek
+
+            var car = CarData.Cars.Where(c => c.CarID == id).FirstOrDefault();
 
             return View(car);
         }
 
+        // POST
+        [HttpPost]
+        public IActionResult Delete(Car car)
+        {
+            // Burası View tarafından gönderilen id ye göre ilgili kaydı silme yapılabilecek şekilde view tarafında gösterdikten sonra post ile bu metoda gelecek
+
+            Car deletecar=CarData.Cars.Where(c => c.CarID == car.CarID).FirstOrDefault(); // Silinecek kayıdı anladı
+
+            CarData.Cars.Remove(deletecar); // silme işlemi
+
+            return RedirectToAction("Listele");
+        }
     }
 }
