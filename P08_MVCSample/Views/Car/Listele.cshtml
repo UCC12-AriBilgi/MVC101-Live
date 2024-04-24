@@ -7,8 +7,9 @@
 <h1>Listele</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Yeni Araba</a>
 </p>
+<hr />
 <table class="table">
     <thead>
         <tr>
@@ -43,9 +44,9 @@
                 @Html.DisplayFor(modelItem => car.Year)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "Edit", new { id=car.CarID }) |
+                @Html.ActionLink("Details", "Details", new { id=car.CarID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=car.CarID })
             </td>
         </tr>
 }
